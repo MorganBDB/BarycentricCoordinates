@@ -7,7 +7,6 @@ PImage BackgroundPlate;
 PFont font;
 
 void setup() {
-  //size(800, 800);
   fullScreen();
   B = new BaryTriangle(557, 196, 1555, 843, 443, 963);
   BackgroundPlate = loadImage("bareframe.png");
@@ -67,6 +66,4 @@ void mouseDragged() {
   } else if (abs(mouseX - B.Corner3.x) < 16 && abs(mouseY - B.Corner3.y) < 16) {
     B.UpdateCorner3(mouseX, mouseY);
   }
-
-  //println(B.l1, B.l2, B.l3, B.l1 + B.l2 + B.l3);
 }
